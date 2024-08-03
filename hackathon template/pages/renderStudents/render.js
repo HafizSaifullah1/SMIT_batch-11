@@ -6,13 +6,7 @@ import { getFirestore, collection, getDocs } from "https://www.gstatic.com/fireb
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBH-FtsZwiz7VSSxjT577SPvEAepZRiRwg",
-    authDomain: "mini-hackathon-101.firebaseapp.com",
-    projectId: "mini-hackathon-101",
-    storageBucket: "mini-hackathon-101.appspot.com",
-    messagingSenderId: "335110657113",
-    appId: "1:335110657113:web:75efaa6e681333823dcd48",
-    measurementId: "G-PJRY4HCK3G"
+   
 };
 
 // Initialize Firebase
