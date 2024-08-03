@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-2xl w-full">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-700">Student Registration</h2>
+            <!-- Name Field -->
+            <div class="mb-4">
+                <label for="full-name" class="block text-gray-600 font-semibold mb-2">Full Name</label>
+                <input type="text" id="name" name="full-name" placeholder="John Doe"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            
+            <!-- Email Field -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-600 font-semibold mb-2">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            
+            <!-- Password Field -->
+            <div class="mb-4">
+                <label for="password" class="block text-gray-600 font-semibold mb-2">Password</label>
+                <input type="password" id="password" name="password" placeholder="********"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            
+            <!-- Confirm Password Field -->
+            <div class="mb-4">
+                <label for="confirm-password" class="block text-gray-600 font-semibold mb-2">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="********"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+            
+            <!-- Phone Number Field -->
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-600 font-semibold mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+
+            <!-- Date of Birth Field -->
+            <div class="mb-4">
+                <label for="dob" class="block text-gray-600 font-semibold mb-2">Date of Birth</label>
+                <input type="date" id="dob" name="dob"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+            </div>
+
+            <!-- Gender Selection -->
+            <div class="mb-4">
+                <label class="block text-gray-600 font-semibold mb-2">Gender</label>
+                <select id="gender" name="gender"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+                    <option>-- Select a Course --</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <!-- Course Selection -->
+            <div class="mb-4">
+                <label for="course" class="block text-gray-600 font-semibold mb-2">Select Course</label>
+                <select id="course" name="course"
+                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+                    <option value="">-- Select a Course --</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="business-management">Business Management</option>
+                    <option value="mechanical-engineering">Mechanical Engineering</option>
+                    <option value="psychology">Psychology</option>
+                </select>
+            </div>
+
+            <!-- Agreement Checkbox -->
+            <div class="mb-6">
+                <label class="flex items-center">
+                    <input type="checkbox" id="agreement" name="agreement" class="form-checkbox">
+                    <span class="ml-2 text-gray-600">I agree to the <a href="#" class="text-blue-500 hover:underline">Terms and Conditions</a></span>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition-colors" onclick="submitForm()">Register</button>
+        
+    </div>
+
+    <script src="./form.js" type="module"></script>
+</body>
+
+</html>
